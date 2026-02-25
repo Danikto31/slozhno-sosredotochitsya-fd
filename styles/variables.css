@@ -2,3 +2,27 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --decorative-default-record-display: flex;
+  --background-color: #000028;
+  /* --text-color:#F1B2CE; */
+  --adaptive-elements-margin: clamp(10px, 3vw, 20px);
+  --adaptive-header-title-margin: min(10px, max(0px, (768px - 100vw) * 0.5));
+  --header-title-text-color: #db00ff;
+  --decor-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --content-section-gap: clamp(50px, calc(21.4px + 7.63vw), 80px);
+  --title-decor-text-color: #000028;
+  --section-paragraph-text-color: #ff0070;
+  --header-bottom-margin: 40px;
+  --accent-color: #ff0070;
+  --decorative-element-corner-border-color: #ff0070;
+  --header-button-text-color: #ff0070;
+  --header-button-hover-border-color: rgb(255, 0, 112, 0.4);
+  --header-decorative-element-rec-text-color: #ff0070;
+  --main-title-header-text-color: #ff0070;
+  --main-card-paragraph-text-color: #f1b2ce;
+  --paragraph-title-background-color: #ff0070;
+  --font-size: 18px;
+  --font-family: "IBM Plex mono", sans-serif;
+  --header-link-to-background-image: url("../images/cover-image-dark.png");
+}

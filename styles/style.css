@@ -2,4 +2,308 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--header-link-to-background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  margin: 0px;
+}
+
+.card-rel {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  border-bottom: 1px solid transparent;
+}
+
+.card-rel:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.card-rel:focus-visible {
+  border: 1px solid currentColor;
+}
+
+.header {
+  position: relative;
+  inline-size: 100%;
+  height: 100vh;
+  min-height: 668px;
+  margin-block-end: var(--header-bottom-margin);
+}
+
+.decorated-zone {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.decorative-element-corner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.decorative-element-corner::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-block-start: 1px solid var(--decorative-element-corner-border-color);
+  border-inline-end: 1px solid var(--decorative-element-corner-border-color);
+  top: var(--adaptive-elements-margin);
+  right: var(--adaptive-elements-margin);
+  inline-size: 25px;
+  height: 25px;
+}
+
+.decorative-element-corner::before {
+  border-block-end: 1px solid var(--decorative-element-corner-border-color);
+  border-inline-start: 1px solid var(--decorative-element-corner-border-color);
+  position: absolute;
+  content: "";
+  display: block;
+  inline-size: 25px;
+  height: 25px;
+  bottom: var(--adaptive-elements-margin);
+  left: var(--adaptive-elements-margin);
+}
+
+.header-decorative-element-record {
+  line-height: 25px;
+  color: var(--header-decorative-element-rec-text-color);
+  font-weight: 400;
+  position: absolute;
+  display: var(--decorative-default-record-display);
+  gap: 10px;
+  align-items: center;
+  top: var(--adaptive-elements-margin);
+  right: calc(var(--adaptive-elements-margin) + 9px);
+}
+
+.header-decorative-element-record::after {
+  background-color: #ff0070;
+  display: block;
+  content: "";
+  box-shadow: 0 0 4px 2px #ff0070;
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 50%;
+}
+
+.header__theme-menu {
+  margin-inline-end: var(--adaptive-elements-margin);
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  color: var(--header-button-text-color);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--header-button-hover-border-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--header-button-hover-border-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--header-button-text-color);
+}
+
+.decor-title {
+  font-size: var(--decor-title-font-size);
+  color: var(--header-title-text-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: bold;
+  line-height: 86%;
+}
+
+.header-title {
+  padding-inline-start: var(--adaptive-header-title-margin);
+  justify-self: start;
+  align-self: end;
+}
+
+.title-decor {
+  color: var(--title-decor-text-color);
+  font-weight: 700;
+  line-height: 23.4px;
+  height: min-content;
+  background-color: var(--paragraph-title-background-color);
+}
+
+.header-title-paragraph {
+  margin-inline: var(--adaptive-elements-margin);
+  max-inline-size: 364px;
+  align-self: center;
+  justify-self: end;
+}
+
+.section-paragraph {
+  font-weight: 700;
+  color: var(--section-paragraph-text-color);
+}
+
+.content-section {
+  padding-inline: var(--adaptive-elements-margin);
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.concentration-list {
+  row-gap: inherit;
+  display: grid;
+}
+
+.how-to__card-title {
+  font-weight: 400;
+}
+
+.content-section:not(:last-child) {
+  margin-block-end: var(--content-section-gap);
+}
+
+.card__text {
+  color: var(--main-card-paragraph-text-color);
+  font-weight: 400;
+  margin-block-start: 10px;
+}
+
+.gallery {
+  row-gap: var(--adaptive-elements-margin);
+}
+
+.gallery-list {
+  display: grid;
+  row-gap: var(--adaptive-elements-margin);
+}
+
+.gallery-picture img {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.footer-title {
+  inline-size: 100%;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-align: center;
+  align-self: center;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  min-height: 667px;
+  margin-block-start: 60px;
+}
+
+@media (width >= 768px) {
+  .decor-title {
+    --decor-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+  .header-title {
+    justify-self: start;
+  }
+
+  .why {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .why__paragraph {
+    grid-row: 1 / span 2;
+  }
+
+  .concentration__paragraph {
+    inline-size: 20%;
+  }
+
+  .how-to {
+    grid-template-columns: 10fr 21fr;
+    column-gap: 20px;
+  }
+
+  .how-to__paragraph {
+    grid-row: 1 / span 6;
+  }
+
+  .gallery-picture img {
+    object-fit: cover;
+  }
+
+  .sunset {
+    grid-column: 1 / 3;
+  }
+
+  .ice-cream {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+
+  .tape {
+    grid-row: 2 / 4;
+    grid-column: 1;
+  }
+
+  .street {
+    grid-column: 2 / 4;
+  }
+
+  .gallery-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10fr 12fr 15fr;
+    gap: var(--adaptive-elements-margin);
+  }
+
+  .gallery-picture img {
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  /* .gallery{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat();
+  } */
+}
+
+@media (width >= 1024px) {
+  .header-title-paragraph {
+    max-inline-size: 491px;
+  }
+
+  .header__theme-menu {
+    margin-block-start: var(--adaptive-elements-margin);
+    justify-self: center;
+    align-self: start;
+  }
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .concentration__paragraph {
+    inline-size: 30%;
+  }
+
+  .concentration-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: var(--adaptive-elements-margin);
+  }
 }
