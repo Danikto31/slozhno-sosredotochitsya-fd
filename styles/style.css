@@ -101,7 +101,7 @@
 }
 
 .header__theme-menu {
-  margin-block-start: 25px;
+  margin-block-start: var(--adaptive-header__theme-menu-margin);
   margin-inline-end: var(--adaptive-elements-margin);
   justify-self: end;
   align-self: center;
@@ -227,10 +227,6 @@
 @media (width >= 768px) {
   .header {
     padding-block-end: 0px;
-  }
-
-  .header__theme-menu {
-    align-self: end;
   }
 
   .decor-title {
