@@ -310,8 +310,8 @@
     inline-size: initial;
   }
 
-  .gallery-list{
-     grid-template-rows: 80fr 97fr min-content;
+  .gallery-list {
+    grid-template-rows: 80fr 97fr min-content;
   }
 
   .concentration__paragraph {
