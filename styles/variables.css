@@ -6,7 +6,7 @@
   --decorative-default-record-display: flex;
   --background-color: #000028;
   /* --text-color:#F1B2CE; */
-  --adaptive-header__theme-menu-margin:clamp(25px, 30.79vw - 90.46px, 146px);;
+  --adaptive-header__theme-menu-margin:clamp(25px, 30.79vw - 90.46px, 146px);
   --adaptive-elements-margin: clamp(10px, 2.65vw, 20px);
   --adaptive-header-title-margin: min(10px, max(0px, (768px - 100vw) * 0.5));
   --header-title-text-color: #db00ff;
