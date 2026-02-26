@@ -6,7 +6,7 @@
   --decorative-default-record-display: flex;
   --background-color: #000028;
   /* --text-color:#F1B2CE; */
-  --adaptive-elements-margin: clamp(10px, 3vw, 20px);
+  --adaptive-elements-margin: clamp(10px, 2.65vw, 20px);
   --adaptive-header-title-margin: min(10px, max(0px, (768px - 100vw) * 0.5));
   --header-title-text-color: #db00ff;
   --decor-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

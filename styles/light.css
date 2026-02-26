@@ -15,6 +15,7 @@
   --title-decor-text-color: #353430;
   --section-paragraph-text-color: #353430;
   --main-card-paragraph-text-color: #353430;
+  --decorative-element-corner-border-color:#353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,5 +31,6 @@
     --title-decor-text-color: #353430;
     --section-paragraph-text-color: #353430;
     --main-card-paragraph-text-color: #353430;
+    --decorative-element-corner-border-color:#353430;
   }
 }
