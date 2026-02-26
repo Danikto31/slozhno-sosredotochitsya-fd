@@ -285,7 +285,7 @@
   .gallery-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80fr 97fr min-content;
+    grid-template-rows: 10fr 12fr 15fr;
     gap: var(--adaptive-elements-margin);
   }
 
@@ -308,6 +308,10 @@
   .header__theme-menu-list {
     flex-direction: row;
     inline-size: initial;
+  }
+
+  .gallery-list{
+     grid-template-rows: 80fr 97fr min-content;
   }
 
   .concentration__paragraph {
