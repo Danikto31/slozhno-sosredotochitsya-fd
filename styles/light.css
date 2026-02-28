@@ -13,9 +13,9 @@
   --accent-color: #ff8dcb;
   --paragraph-title-background-color: #ff8dcb;
   --title-decor-text-color: #353430;
-  --section-paragraph-text-color: #353430;
+  --section-header-text-color: #353430;
   --main-card-paragraph-text-color: #353430;
-  --decorative-element-corner-border-color:#353430;
+  --decorative-element-corner-border-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,8 +29,8 @@
     --accent-color: #ff8dcb;
     --paragraph-title-background-color: #ff8dcb;
     --title-decor-text-color: #353430;
-    --section-paragraph-text-color: #353430;
+    --section-header-text-color: #353430;
     --main-card-paragraph-text-color: #353430;
-    --decorative-element-corner-border-color:#353430;
+    --decorative-element-corner-border-color: #353430;
   }
 }
